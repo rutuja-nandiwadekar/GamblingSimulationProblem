@@ -1,16 +1,16 @@
 package com.bridgelabz;
 
 public class GamblingSimulation {
-
+	//initialization
+	public static int STAKE = 100;
+	public static int BET = 1;
 	public static void main(String[] args) {
 		System.out.println("Welcome to Gambling Simulation Problem");
-		winOrloose();
+		winOrloose(); //calling method
 	}
 
 	public static void winOrloose() {
-		int STAKE = 100;
-		int BET = 1;
-
+		//initialization
 		int check = (int) Math.floor((Math.random() * 10) % 2);
 		if (check == 0) {
 			STAKE++;
